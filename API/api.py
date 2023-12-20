@@ -32,11 +32,6 @@ def predict():
         title = data.get("title", "")
         question = data.get("question", "")
 
-        # Faites vos prédictions ici avec les variables title et question
-        # Par exemple, supposons que vous avez un modèle de prédiction appelé predict_tags
-        # et qu'il retourne une liste de tags prédits.
-        # Vous pouvez également stocker ces prédictions dans la base de données MySQL.
-
         # Prédiction (à adapter selon votre modèle)
         tags = predict_tags(title, question)
 
@@ -57,10 +52,10 @@ def predict():
         return jsonify({"error": str(e)})
 
 def predict_tags(title, question):
-    # Faites vos prédictions de tags ici (utilisez votre modèle ou algorithme)
-    # Par exemple, supposons une prédiction aléatoire pour l'exemple
-    tags = np.random.choice(["tag1", "tag2", "tag3"], size=3, replace=False)
+    tags = "task 1"
     return list(tags)
+
+# def pre process
 
 if __name__ == '__main__':
     app.run(debug=True)
