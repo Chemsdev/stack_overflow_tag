@@ -9,5 +9,3 @@ app = FastAPI()
 async def first():
     print("hello world")
     return 
-
-
