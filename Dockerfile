@@ -27,6 +27,6 @@ COPY Traitement/ preprocess.py
 EXPOSE 8501
 
 # On spécifie la commande à saisir pour exécuter l'app.
-CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "api:app"]
 
 # uvicorn api:app --host 0.0.0.0 --port 80
