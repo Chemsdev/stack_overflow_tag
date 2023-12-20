@@ -7,5 +7,4 @@ app = FastAPI()
 
 @app.post("/data")
 async def first():
-    print("hello world")
-    return 
+    return "hello world"

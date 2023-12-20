@@ -21,8 +21,6 @@ COPY Traitement/ ingest.py
 COPY Traitement/ model.py
 COPY Traitement/ preprocess.py
 
-
-
 # On spécifie le port.
 EXPOSE 8501
 
