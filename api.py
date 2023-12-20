@@ -19,7 +19,7 @@ def get_mysql_connection():
         user=mysql_user,
         password=mysql_password,
         database=mysql_database
-    )
+)
 
 @app.route('/')
 def index():
@@ -56,6 +56,5 @@ def predict_tags(title, question):
     return list(tags)
 
 # def pre process
-
 if __name__ == '__main__':
     app.run(debug=True)
