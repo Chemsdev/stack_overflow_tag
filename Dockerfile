@@ -27,6 +27,6 @@ COPY Traitement/ preprocess.py
 EXPOSE 8501
 
 # On spécifie la commande à saisir pour exécuter l'app.
-CMD ["uvicorn", "api:app"]
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "80"]
 
-# uvicorn api:app --host 0.0.0.0 --port 80
+# execution API : docker run -p 80:80 stackoverflow:v1

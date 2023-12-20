@@ -1,6 +1,7 @@
 fastapi==0.105.0
 numpy==1.23.5
 pandas==1.5.3
-Pillow==10.1.0
 plotly==5.14.1
 streamlit==1.26.0
+pillow>=7.1.0,<10
+uvicorn==0.15.0
